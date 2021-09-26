@@ -1,53 +1,62 @@
 <%- include partials/header.ejs %>
 
-<%- include partials/main_nav.ejs %>
-  
-<section id="services" class="services section-bg">
-    <div class="container" data-aos="fade-up">
+  <%- include partials/main_nav.ejs %>
 
-      <header class="section-header">
-        <h3>Services</h3>
-        <p>Following services is provided by Hasnian Ali.</p>
-      </header>
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
 
-      <div class="row">
+        <header class="section-header">
+          <h3>Services</h3>
+          <p>Following services is provided by Hasnian Ali.</p>
+        </header>
 
-        <div class="col-md-6 col-lg-4 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
-          <div class="box">
-            <div class="icon" style="background: #fceef3;"><i class="fas fa-cogs" style="color: #ff689b;"></i></div>
-            <h4 class="title"><a href="">Backend Development</a></h4>
-            <p class="description">Java Development using Core java, Advance Java, Spring Boot, Miecoservices</p>
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box" style="background-image: url('Assets/images/java-spring.png');  background-size: 100% 100%;">
+              <div class="icon" style="background: #fceef3;padding-top: 20px;"><i class="fas fa-cogs"
+                  style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Backend Development</a></h4>
+              <p style="color: black;"  class="description">Java Development using Core java, Advance Java, Spring Boot, Miecoservices, Cloud
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box" style="background-image: url('Assets/images/frontend.jpeg');  background-size: 100% 100%;">
+              <div class="icon" style="background: #fff0da;padding-top: 20px;"><i class="fas fa-file-code"
+                  style="color: #e98e06;"></i></div>
+              <h4 class="title"><a href="">Front End Development</a></h4>
+              <p style="color: black;"  class="description">Designing of Website using different cutting Edge techonogies including React, Java
+                Script and Angular</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="box" style="background-image: url('Assets/images/microservice.jpeg');  background-size: 100% 100%;">
+              <div class="icon" style="background: #e6fdfc;padding-top: 20px;"><i class="fas fa-sitemap"
+                  style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">Microservices Development</a></h4>
+              <p style="color: black;" class="description">Microservice Design using differnet patterns like SAGA, Strangler and 2-phase
+                commit</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow" data-aos="zoom-in" data-aos-delay="100">
+            <div >
+              <div class="box" style="background-image: url('Assets/images/database.png');  background-size: 100% 100%;">
+            <div class=" icon" style="background: #eafde7;padding-top: 20px;"><i class="fas fa-database"
+                  style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Database Development</a></h4>
+              <p style="color: black;"  class="description">Designing of Tables and Database using the Database sharding</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="box">
-            <div class="icon" style="background: #fff0da;"><i class="fas fa-file-code" style="color: #e98e06;"></i></div>
-            <h4 class="title"><a href="">Front End Development</a></h4>
-            <p class="description">Designing of Website using different cutting Edge techonogies including React, Java Script and Angular</p>
-          </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-          <div class="box">
-            <div class="icon" style="background: #e6fdfc;"><i class="fas fa-sitemap" style="color: #3fcdc7;"></i></div>
-            <h4 class="title"><a href="">Microservices Development</a></h4>
-            <p class="description">Microservice Design using differnet patterns like SAGA, Strangler</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 wow" data-aos="zoom-in" data-aos-delay="100">
-          <div class="box">
-            <div class="icon" style="background: #eafde7;"><i class="fas fa-database" style="color:#41cf2e;"></i></div>
-            <h4 class="title"><a href="">Database Development</a></h4>
-            <p class="description">Designing of Tables and Database using the Database sharding</p>
-          </div>
-        </div>
+      </div>
 
-    </div>
+      </div>
+    </section><!-- End Services Section -->
 
-    </div>
-  </section><!-- End Services Section -->
+    <%- include partials/bottom_nav.ejs %>
 
-  <%- include partials/bottom_nav.ejs %>  
-
-<%- include partials/footer.ejs %>
-  
+      <%- include partials/footer.ejs %>
