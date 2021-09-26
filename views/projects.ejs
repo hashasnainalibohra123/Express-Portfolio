@@ -1,22 +1,142 @@
 <%- include partials/header.ejs %>
 
-<%- include partials/main_nav.ejs %>
-  
+  <%- include partials/main_nav.ejs %>
+    <section id="services" class="services section-bg">
+      <div class="container">
+        <!--  image left  -->
+        <div class="bg-transparent border outer">
+          <div class="row" style="
+          padding: 12px;">
 
-  <!-- Main Content -->
-  <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      
-      
-    </div>
-  </main>
-  
-<%- include partials/bottom_nav.ejs %>  
+            <div class="col-md-6">
+              <img src="Assets/images/claims.jpg" alt="" class="w-100" />
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
 
-<%- include partials/footer.ejs %>
-  
+              <div class="row align-items-center h-100">
+                <div class="col">
+                  <h1 class="display-5">Claims Data Processing System</h1>
+                  <p class="lead">Implmented Real-time claims data processing for Claims system. Using of KStreams to
+                    process the data and saving to DB.
+                  <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Environment</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="w-25">
+                          <img class="img-responsive" src="Assets/images/UHG.jpg" />
+                        </td>
+                        <td>Kakfa, Open Shift, Spring
+                          Microservices, Splunk, Java</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </p>
 
+                </div>
+              </div>
+            </div>
 
+          </div>
+          <!-- /.col-md-6 -->
 
+        </div>
+        <!-- /.row -->
 
+        <!--  image right  -->
+        <div class="bg-transparent border outer">
+          <div class="row" style="
+          padding: 12px;">
+            <div class="col-md-6 order-md-6">
+
+              <img src="Assets/images/benefit.jpeg" style="height: 401px;" alt="" class="w-100" />
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6 order-md-1">
+
+              <div class="row align-items-center h-100">
+                <div class="col">
+                  <h1 class="display-5">Inegrated Eligibility Product</h1>
+                  <p class="lead"> Build online and onsite portal for Federal
+                    Programs Using Spring Cloud Microservice
+                    Architecture for USA states.
+                  <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Environment</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="w-25"> <img class="img-responsive" src="Assets/images/Optum.jpg" /></td>
+                        <td>Spring, Spring Cloud, Spring
+                          Microservices, Java, J2EE, Splunk,
+                          Jenkin, JMeter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+
+          </div>
+        </div>
+        <!-- /.row -->
+
+        <!--  image left  -->
+        <div class="bg-transparent border outer">
+        <div class="row" style="
+        padding: 12px;">
+          <div class="col-md-6">
+            <img src="Assets/images/payroll.jpg" alt="" class="w-100" />
+          </div>
+          <!-- /.col-md-6 -->
+          <div class="col-md-6">
+
+            <div class="row align-items-center h-100">
+              <div class="col">
+                <h1 class="display-5">ADP Payroll BPM Application</h1>
+                <p class="lead">Build a multinational payroll application using BPM technologies. Payroll support
+                  Applications. Designing process workflow for payroll engine.
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">Company</th>
+                      <th scope="col">Environment</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="w-25">
+                        <img class="img-responsive" src="Assets/images/ADP.png" />
+                      </td>
+                      <td>IBM BPM Designer, J2EE, Java</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- /.col-md-6 -->
+
+        </div>
+      </div>
+      <!-- /.row -->
+      </div>
+    </section>
+    <%- include partials/bottom_nav.ejs %>
+
+      <%- include partials/footer.ejs %>

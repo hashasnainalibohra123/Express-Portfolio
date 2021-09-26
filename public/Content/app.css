@@ -204,3 +204,9 @@ a img{border:0px;}
 }
 .top-divider{margin-bottom:40px;}
 .bottom-divider{margin-top:40px;}
+
+.outer {
+	outline: 2px solid #CCC;
+	border: 1px solid #999;
+	background-color: #999;
+	}
