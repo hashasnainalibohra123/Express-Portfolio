@@ -4,12 +4,49 @@
   
 
   <!-- Main Content -->
-  <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      
+    
+    <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to the <span></span><%= title %> </span>page</h2>
+          <p class="animate__animated animate__fadeInUp">Software Engineering is the discipline of creating high-quality software systems in a systematic, controlled and efficient manner.</p>
+          <a href="/about" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">My Aim</h2>
+          <p class="animate__animated animate__fadeInUp">I am an developer. I apply analytic thinking to problems and find a pragmatic solution that isn't a quick fix, but a lasting value.</p>
+          <a href="/about" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">I am and always will be a student. </h2>
+          <p class="animate__animated animate__fadeInUp">I will keep the beginners mind by playing and experimenting without the fear of failure. There will always be things I have to learn and I will make mistakes, which develop me.</p>
+          <a href="/about" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
     </div>
-  </main>
+  </section><!-- End Hero -->
+
   
 <%- include partials/bottom_nav.ejs %>  
 
