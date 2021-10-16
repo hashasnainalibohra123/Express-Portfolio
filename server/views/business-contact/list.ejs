@@ -19,114 +19,110 @@
             </div>
         </header>
         <section id="services" class="services section-bg" style="padding-top: 0px;">
-            <div class="container" data-aos="fade-up" >
-                        <div class="container register">
-                            <div class="row">
-                                <% if(typeof displayName=='string' && displayName) { %>
-                                <div class="col-md-3 register-left">
-                                    <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
-                                    <h3>Welcome</h3>
-                                    <p>You want to add new Business Contact?</p>
-                                    <a href="/business-contact/add"><input type="submit"
-                                            class="btn-get-started animate__animated animate__bounce hvr-buzz-out"
-                                            name="" value="Add Contact" /><br /></a>
+            <div class="container register" data-aos="fade-up">
+                <div class="row">
+                    <% if(typeof displayName=='string' && displayName) { %>
+                        <div class="col-md-3 register-left">
+                            <img
+                                src="https://img.icons8.com/external-prettycons-solid-prettycons/60/000000/external-contact-communications-prettycons-solid-prettycons.png" />
+                            <h3>Contacts</h3>
+                            <p>You want to add new Business Contact?</p>
+                            <a href="/business-contact/add"><input type="submit"
+                                    class="btn-get-started animate__animated animate__bounce hvr-buzz-out" name=""
+                                    value="Add Contact" /><br /></a>
 
-                                </div>
-                                <% } %>
-                                <div class="col-md-9 register-right">
+                        </div>
+                        <% } %>
+                            <div class="col-md-9 register-right">
 
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
-                                            aria-labelledby="home-tab">
-                                            <form method="POST" autocomplete="off">
-                                                <div class="row register-form">
-                                                    <div class="col-md-">
-                                                        <table id="dtBasicExample"
-                                                            class="table hover cell-border order-column stripe">
-                                                            <!-- Header Row-->
-                                                            <thead>
-                                                                <tr>
-                                                                    <% if(typeof displayName=='string' && displayName) {
-                                                                        %>
-                                                                        <th>Contact Name</th>
-                                                                        <th>Contact Number</th>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <form method="POST" autocomplete="off">
+                                            <div class="row register-form" style="
+                                            padding-top: 50px;
+                                            margin-top: 0px;
+                                        ">
+                                                <table id="dtBasicExample"
+                                                    class="table hover cell-border order-column stripe">
+                                                    <!-- Header Row-->
+                                                    <thead>
+                                                        <tr>
+                                                            <% if(typeof displayName=='string' && displayName) { %>
+                                                                <th>Contact Name</th>
+                                                                <th>Contact Number</th>
+                                                                <th>Email</th>
+                                                                <th>Description</th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <% } else { %>
+                                                                    <th>Contact Name</th>
+                                                                    <th">Contact Number</th>
                                                                         <th>Email</th>
                                                                         <th>Description</th>
-                                                                        <th></th>
-                                                                        <th></th>
-                                                                        <% } else { %>
-                                                                            <th>Contact Name</th>
-                                                                            <th">Contact Number</th>
-                                                                                <th>Email</th>
-                                                                                <th>Description</th>
-                                                                                <% } %>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <!-- Repeatable Template Row -->
+                                                                        <% } %>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <!-- Repeatable Template Row -->
 
-                                                                <% for(let count=0; count < ContactList.length; count++)
-                                                                    { %>
-                                                                    <tr>
-                                                                        <% if(typeof displayName=='string' &&
-                                                                            displayName) { %>
-                                                                            <td>
-                                                                                <%= ContactList[count].name %>
-                                                                            </td>
-                                                                            <td>
-                                                                                <%= ContactList[count].phone %>
-                                                                            </td>
-                                                                            <td>
-                                                                                <%= ContactList[count].email %>
-                                                                            </td>
-                                                                            <td>
-                                                                                <%= ContactList[count].description %>
-                                                                            </td>
-                                                                            <td>
-                                                                                <a href="/business-contact/edit/<%= ContactList[count]._id %>"
-                                                                                    class="btn btn-primary btn-sm">
-                                                                                    <i class="fas fa-pencil-alt"></i>
-                                                                                    Edit</a>
-                                                                            </td>
-                                                                            <td>
-                                                                                <a href="/business-contact/delete/<%= ContactList[count]._id %>"
-                                                                                    class="btn btn-danger btn-sm">
-                                                                                    <i class="fas fa-trash-alt"></i>
-                                                                                    Delete</a>
-                                                                            </td>
-                                                                            <% } else { %>
-                                                                                <td>
-                                                                                    <%= ContactList[count].name %>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <%= ContactList[count].phone %>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <%= ContactList[count].email %>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <%= ContactList[count].description
-                                                                                        %>
-                                                                                </td>
-                                                                                <% } %>
-                                                                    </tr>
-                                                                    <% } %>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                        <% for(let count=0; count < ContactList.length; count++) { %>
+                                                            <tr>
+                                                                <% if(typeof displayName=='string' && displayName) { %>
+                                                                    <td>
+                                                                        <%= ContactList[count].name %>
+                                                                    </td>
+                                                                    <td>
+                                                                        <%= ContactList[count].phone %>
+                                                                    </td>
+                                                                    <td>
+                                                                        <%= ContactList[count].email %>
+                                                                    </td>
+                                                                    <td>
+                                                                        <%= ContactList[count].description %>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="/business-contact/edit/<%= ContactList[count]._id %>"
+                                                                            class="btn btn-primary btn-sm">
+                                                                            <i class="fas fa-pencil-alt"></i>
+                                                                            Edit</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="/business-contact/delete/<%= ContactList[count]._id %>"
+                                                                            class="btn btn-danger btn-sm">
+                                                                            <i class="fas fa-trash-alt"></i>
+                                                                            Delete</a>
+                                                                    </td>
+                                                                    <% } else { %>
+                                                                        <td>
+                                                                            <%= ContactList[count].name %>
+                                                                        </td>
+                                                                        <td>
+                                                                            <%= ContactList[count].phone %>
+                                                                        </td>
+                                                                        <td>
+                                                                            <%= ContactList[count].email %>
+                                                                        </td>
+                                                                        <td>
+                                                                            <%= ContactList[count].description %>
+                                                                        </td>
+                                                                        <% } %>
+                                                            </tr>
+                                                            <% } %>
+                                                    </tbody>
+                                                </table>
 
-                                                </div>
-                                            </form>
-                                        </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                </div>
             </div>
         </section>
 
 
         <section id="services" class="services section-bg" style="padding-top: 0px;"></section>
-<%- include ../partials/bottom_nav.ejs %>
+        <%- include ../partials/bottom_nav.ejs %>
 
-<%- include ../partials/footer.ejs %>
+            <%- include ../partials/footer.ejs %>
