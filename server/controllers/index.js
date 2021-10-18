@@ -64,9 +64,9 @@ module.exports.processLoginPage = (req, res, next) => {
         }
 
         // is there a user login error? security question Mismatch Error
-        if(user && req.question  && req.answer)
+        if(user && req.body.question  && req.body.answer)
         {
-            if(req.question != user.question && req.answer != user.answer)
+            if(req.body.question!= user.question || req.body.answer != user.answer)
             {
                 req.flash('loginMessage', 'Authentication Error : Security Question Mismatch');
                 return res.redirect('/login');
